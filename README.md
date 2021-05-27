@@ -2,19 +2,19 @@
 
 Small tool making (64bit exe only) creating a divider like:  
 ";------------- title -------------"  
-or
+or  
 "/------------- title -------------"  
 etc.  
 from marked "title" via the clipboard. 
 
 #### Operation
-Start the app, running in the background.  
-Select the text, press the hotkey (Alt + l is default).  
+Start the app, app is running in the background.  
+Select the text and then press the hotkey (Alt + l is default).  
   
  
-#### Remark
-there are some false positiv virus detections,  
-Windows Defender detects it as a virus too (sometimes)!  
+#### Remarks
+* There are some false positiv virus detections,  
+Windows Defender detects it as a virus too (sometimes only!)  
 Viruscheck at Virustotal see at the end of this page.  
 I did not report the false-positives to Microsoft,  
 because the development has not finished yet.  

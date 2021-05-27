@@ -13,4 +13,6 @@
 
 @start titleliner.exe
 
+@del *.tmp
+
 @exit
