@@ -8,7 +8,7 @@ Exe is 64 bit AUnicode now,
 there are some false positiv virus detections,  
 Windows Defender detects it as a virus too (sometimes)!  
 Viruscheck at Virustotal see at the end of this page.  
-I did not report the false-positives to the antivirus companies,  
+I did not report the false-positives to Microsoft,  
 because the development has not finished yet.  
   
 #### Latest changes  

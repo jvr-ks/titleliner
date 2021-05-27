@@ -31,7 +31,7 @@ FileEncoding, UTF-8-RAW
 OwnPID := DllCall("GetCurrentProcessId")
 
 appName := "Titleliner"
-appVersion := "0.025"
+appVersion := "0.030"
 app := appName . " " . appVersion
 
 titleLineLengthDefault := 77
