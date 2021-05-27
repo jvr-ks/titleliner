@@ -1,10 +1,18 @@
 # Titleliner ![Icon](https://github.com/jvr-ks/titleliner/blob/master/titleliner.png?raw=true)
 
-Small tool making:  
+Small tool making (64bit exe only) creating a divider like:  
 ";------------- title -------------"  
+or
+"/------------- title -------------"  
+etc.  
 from marked "title" via the clipboard. 
+
+#### Operation
+Start the app, running in the background.  
+Select the text, press the hotkey (Alt + l is default).  
   
-Exe is 64 bit AUnicode now,  
+ 
+#### Remark
 there are some false positiv virus detections,  
 Windows Defender detects it as a virus too (sometimes)!  
 Viruscheck at Virustotal see at the end of this page.  
@@ -15,18 +23,8 @@ because the development has not finished yet.
 * Super simple app-update mechanism via "restart64.bat"
 * A newline is added to the generated divider!
 * Self remove from memory: titleliner.exe remove 
-* Comment characters 1 to 9 (defined in the Configuration-file: "titleliner.ini") are selectable via radio buttons.  
-* If clipboard is empty or contains only one blank and nothing is selected, 
-this "empty" divider is generated:  
-; -----------------------------------------------------------------------------  
-* If clipboard contains text and nothing is selected,  
-the text is used,  
-otherwise the selected text is copied to the clipboard and the titleline is generated accordingly.  
-* Operation completely changed:  
-After Titleliner is running, it stays in the background and it is now operated by the hotkey (\[Alt] + \[l] default)!  
-~~* Comment characters can be set via "commentChar=" in the "setup" section of the file "titleliner.ini"~~  
-~~* Selection mechanism changed: Select Text and press \[Ctrl] + \[c]~~    
-* Using "-" instead of "*"  
+* Comment characters 1 to 8 (defined in the Configuration-file: "titleliner.ini") are selectable via radio buttons.  
+* If nothing is selected, an "empty" divider is generated.  
   
 #### Download 
 (Right-click ... save as ... to download)  
@@ -56,6 +54,6 @@ Copyright (c) 2019/2020 J. v. Roos
 
 
 ##### Viruscheck at Virustotal 
-[Check here](https://www.virustotal.com/gui/url/feae6aae34b2054ddaf4369ae8c3830fc9a147ddcd3cbec0619d5079463c5c4a/detection/u-feae6aae34b2054ddaf4369ae8c3830fc9a147ddcd3cbec0619d5079463c5c4a-1622111310
+[Check here](https://www.virustotal.com/gui/url/feae6aae34b2054ddaf4369ae8c3830fc9a147ddcd3cbec0619d5079463c5c4a/detection/u-feae6aae34b2054ddaf4369ae8c3830fc9a147ddcd3cbec0619d5079463c5c4a-1622113519
 )  
 Use [CTRL] + Click to open in a new window! 

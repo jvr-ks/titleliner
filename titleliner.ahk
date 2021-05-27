@@ -31,7 +31,7 @@ FileEncoding, UTF-8-RAW
 OwnPID := DllCall("GetCurrentProcessId")
 
 appName := "Titleliner"
-appVersion := "0.030"
+appVersion := "0.031"
 app := appName . " " . appVersion
 
 titleLineLengthDefault := 77
@@ -405,6 +405,7 @@ lineTitle(){
 		
 		if (cl == "" || cl == " "){
 			clipboard := ""
+			clipSave := ""
 		}
 		lineTitleGenerate(theCommentChar)
 		
