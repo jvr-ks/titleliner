@@ -31,7 +31,7 @@ FileEncoding, UTF-8-RAW
 OwnPID := DllCall("GetCurrentProcessId")
 
 appName := "Titleliner"
-appVersion := "0.029"
+appVersion := "0.025"
 app := appName . " " . appVersion
 
 titleLineLengthDefault := 77
@@ -489,10 +489,8 @@ updateApp(){
 	
 	vers := getVersionFromGithub()
 	if (vers != "unknown"){
-		msgbox, This version: %appVersion%, available version %vers%
 		if (vers > appVersion){
 			msg := "This is: " . appVersion . ", available on Github is: " . vers . " update now?"
-			
 			MsgBox , 1, Update available!, %msg%
 			IfMsgBox, OK
 				{
@@ -513,7 +511,7 @@ updateApp(){
 					}
 				}
 		} else {
-			msgbox, No update available!
+			msgbox, This version: %appVersion%, available version %vers%, no update available!
 		}
 	}
 
