@@ -41,7 +41,33 @@ optional
 or clone the [titleliner repository](https://github.com/jvr-ks/titleliner.git) .  
   
 **Directory must be writable by the app!**  
-("titleliner.ini" is used to store selection of comment-character).  
+
+#### Configuration file "titleliner.ini"  
+Section:
+[setup]
+titleLineLength
+The target length of the generated line, default is 77 characters.  
+
+[hotkeys]
+menuHotkey="!l"
+The operation hotkey, [autohotkey](https://www.autohotkey.com/docs/Hotkeys.htm) notation.
+
+[commentChar]
+commentChar1=";"
+commentChar2="//"
+commentChar3="#"
+commentChar4="-"
+commentChar5="-"
+commentChar6="-"
+commentChar7="-"
+commentChar8="-"
+
+commentCharSelected=1
+
+Up to 8 Comment-Characters definitions, ";" is autohotkey, "//" is Java/Scala etc.  
+"-" means not used!  
+
+commentCharSelected is set by the app radio button selection.    
    
 #### License: MIT
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sub license, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
@@ -54,6 +80,6 @@ Copyright (c) 2019/2020 J. v. Roos
 
 
 ##### Viruscheck at Virustotal 
-[Check here](https://www.virustotal.com/gui/url/feae6aae34b2054ddaf4369ae8c3830fc9a147ddcd3cbec0619d5079463c5c4a/detection/u-feae6aae34b2054ddaf4369ae8c3830fc9a147ddcd3cbec0619d5079463c5c4a-1622113519
+[Check here](https://www.virustotal.com/gui/url/feae6aae34b2054ddaf4369ae8c3830fc9a147ddcd3cbec0619d5079463c5c4a/detection/u-feae6aae34b2054ddaf4369ae8c3830fc9a147ddcd3cbec0619d5079463c5c4a-1622114869
 )  
 Use [CTRL] + Click to open in a new window! 
