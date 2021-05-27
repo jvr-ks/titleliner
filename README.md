@@ -38,7 +38,7 @@ and
 and  
 [restart64.bat](https://github.com/jvr-ks/titleliner/raw/master/restart64.bat)   
 optional  
-[create_titleliner_exe_link_with_hidewindow_in_autostartfolder.bat] (https://github.com/jvr-ks/titleliner/raw/master/create_titleliner_exe_link_with_hidewindow_in_autostartfolder.bat) 
+[AutostartFolderBatchfile] (https://github.com/jvr-ks/titleliner/raw/master/create_titleliner_exe_link_with_hidewindow_in_autostartfolder.bat) 
 
 or clone the [titleliner repository](https://github.com/jvr-ks/titleliner.git) .  
   
