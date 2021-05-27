@@ -43,30 +43,30 @@ or clone the [titleliner repository](https://github.com/jvr-ks/titleliner.git) .
 **Directory must be writable by the app!**  
 
 #### Configuration file "titleliner.ini"  
-Section:
-[setup]
-titleLineLength
+Section:  
+[setup]  
+titleLineLength  
 The target length of the generated line, default is 77 characters.  
-
-[hotkeys]
-menuHotkey="!l"
-The operation hotkey, [autohotkey](https://www.autohotkey.com/docs/Hotkeys.htm) notation.
-
-[commentChar]
-commentChar1=";"
-commentChar2="//"
-commentChar3="#"
-commentChar4="-"
-commentChar5="-"
-commentChar6="-"
-commentChar7="-"
-commentChar8="-"
-
-commentCharSelected=1
-
+  
+[hotkeys]  
+menuHotkey="!l"  
+The operation hotkey, [autohotkey](https://www.autohotkey.com/docs/Hotkeys.htm) notation.  
+  
+[commentChar]  
+commentChar1=";"  
+commentChar2="//"  
+commentChar3="#"  
+commentChar4="-"  
+commentChar5="-"  
+commentChar6="-"  
+commentChar7="-"  
+commentChar8="-"  
+  
+commentCharSelected=1  
+  
 Up to 8 Comment-Characters definitions, ";" is autohotkey, "//" is Java/Scala etc.  
 "-" means not used!  
-
+  
 commentCharSelected is set by the app radio button selection.    
    
 #### License: MIT
