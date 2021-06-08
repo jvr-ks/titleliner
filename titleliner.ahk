@@ -38,11 +38,10 @@ OwnPID := DllCall("GetCurrentProcessId")
 
 appName := "Titleliner"
 appVersion := "0.033"
-app := appName . " " . appVersion
+app := appName . " " . appVersion . " " . bit . "-bit"
 
 titleLineLengthDefault := 77
 clipSave := ""
-autoinsert := false
 
 commentCharSelected := 1
 commentCharSelectedMax := 8
@@ -151,6 +150,7 @@ mainWindow(hide := false){
 	global commentCharSelectedMax
 	global msgDefault
 	global OwnPID
+	global bit
 
 
 	Gui, guiMain:Destroy
@@ -259,7 +259,7 @@ mainWindow(hide := false){
 	if (!hide){
 		registerWindow()
 		setTimer,checkFocus,3000
-		Gui, guiMain:Show, Autosize center,%app%	
+		Gui, guiMain:Show, Autosize center,%app%
 		
 		setDefaultFocus()
 	}
