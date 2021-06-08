@@ -21,17 +21,23 @@
 
 #include %A_ScriptDir%\Lib\ahk_common.ahk
 
+bit := (A_PtrSize=8 ? "64" : "32")
+if(InStr(A_ScriptName,"A32") > 0)
+	bit := "A32"
+
 downLoadURL := "https://github.com/jvr-ks/titleliner/raw/master/titleliner.exe"
 exeFilename := "titleliner.exe"
 downLoadFilename := "titleliner.exe.tmp"
 downLoadURLrestart64 := "https://github.com/jvr-ks/titleliner/raw/master/restart64.bat"
+downLoadURLrestart32 := "https://github.com/jvr-ks/titleliner/raw/master/restart32.bat"
+downLoadURLrestartA32 := "https://github.com/jvr-ks/titleliner/raw/master/restartA32.bat"
 
 FileEncoding, UTF-8-RAW
 
 OwnPID := DllCall("GetCurrentProcessId")
 
 appName := "Titleliner"
-appVersion := "0.032"
+appVersion := "0.033"
 app := appName . " " . appVersion
 
 titleLineLengthDefault := 77
@@ -462,6 +468,7 @@ editIniFile() {
 	global iniFile
 	global notepadpath
 	global appname
+	global bit
 	
 	f := iniFile
 	showMessage("Please close the editor to refresh the menu!")
@@ -469,7 +476,15 @@ editIniFile() {
 	showMessageDefaultTitleliner()
 	msgbox, A restart of %appname% is required!
 
-	run,%comspec% /k restart64.bat
+	switch bit
+	{
+		case "64":
+			run,%comspec% /k restart64.bat
+		case "32":
+			run,%comspec% /k restart32.bat
+		case "A32":
+			run,%comspec% /k restartA32.bat
+	}
 
 	ExitApp
 
@@ -497,8 +512,11 @@ updateApp(){
 	global msgDefault
 	global downLoadURL
 	global exeFilename
+	global bit
 	global downLoadFilename
 	global downLoadURLrestart64
+	global downLoadURLrestart32
+	global downLoadURLrestartA32
 	
 	vers := getVersionFromGithub()
 	if (vers != "unknown"){
@@ -507,20 +525,57 @@ updateApp(){
 			MsgBox , 1, Update available!, %msg%
 			IfMsgBox, OK
 				{
-					;restart64.bat can contain update hints!
-					FileDelete, restart64.bat
-					UrlDownloadToFile, %downLoadURLrestart64%, restart64.bat
-					sleep,1000
+					;restartXX.bat can contain update hints!
 					
-					FileDelete, %downLoadFilename%
-					UrlDownloadToFile, %downLoadURL%, %downLoadFilename%
-					
-					if FileExist(downLoadFilename){
-						run,%comspec% /k restart64.bat
-						sleep,1000
-						exitApp
-					} else {
-						msgbox,Could not download update!
+				switch bit
+					{
+						case "64":
+							FileDelete, restart64.bat
+							UrlDownloadToFile, %downLoadURLrestart64%, restart64.bat
+							sleep,1000
+							
+							FileDelete, %downLoadFilename%
+							UrlDownloadToFile, %downLoadURL%, %downLoadFilename%
+							
+							if FileExist(downLoadFilename){
+								run,%comspec% /k restart64.bat
+								sleep,1000
+								exitApp
+							} else {
+								msgbox,Could not download update!
+							}
+						case "32":
+							FileDelete, restart32.bat
+							UrlDownloadToFile, %downLoadURLrestart32%, restart32.bat
+							sleep,1000
+							
+							FileDelete, %downLoadFilename%
+							UrlDownloadToFile, %downLoadURL%, %downLoadFilename%
+							
+							if FileExist(downLoadFilename){
+								run,%comspec% /k restart32.bat
+								sleep,1000
+								exitApp
+							} else {
+								msgbox,Could not download update!
+							}
+
+						case "A32":
+							FileDelete, restartA32.bat
+							UrlDownloadToFile, %downLoadURLrestartA32%, restartA32.bat
+							sleep,1000
+							
+							FileDelete, %downLoadFilename%
+							UrlDownloadToFile, %downLoadURL%, %downLoadFilename%
+							
+							if FileExist(downLoadFilename){
+								run,%comspec% /k restartA32.bat
+								sleep,1000
+								exitApp
+							} else {
+								msgbox,Could not download update!
+							}
+						
 					}
 				}
 		} else {
