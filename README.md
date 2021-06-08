@@ -82,10 +82,10 @@ Copyright (c) 2019/2020 J. v. Roos
 
 
 ##### Viruscheck at Virustotal 
-[Virusscan at Virustotal, titleliner.exe 64bit-exe, Check here]((https://www.virustotal.com/gui/url/feae6aae34b2054ddaf4369ae8c3830fc9a147ddcd3cbec0619d5079463c5c4a/detection/u-feae6aae34b2054ddaf4369ae8c3830fc9a147ddcd3cbec0619d5079463c5c4a-1623150561
+[Virusscan at Virustotal, titleliner.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/feae6aae34b2054ddaf4369ae8c3830fc9a147ddcd3cbec0619d5079463c5c4a/detection/u-feae6aae34b2054ddaf4369ae8c3830fc9a147ddcd3cbec0619d5079463c5c4a-1623150561
 )  
-[Virusscan at Virustotal, titleliner32.exe 32bit-exe, Check here]((https://www.virustotal.com/gui/url/4ab1c10fc7391755e32321c2a6b37f73cb66a0f1aebb696a6b3f10eca6110f39/detection/u-4ab1c10fc7391755e32321c2a6b37f73cb66a0f1aebb696a6b3f10eca6110f39-1623150761
+[Virusscan at Virustotal, titleliner32.exe 32bit-exe, Check here](https://www.virustotal.com/gui/url/4ab1c10fc7391755e32321c2a6b37f73cb66a0f1aebb696a6b3f10eca6110f39/detection/u-4ab1c10fc7391755e32321c2a6b37f73cb66a0f1aebb696a6b3f10eca6110f39-1623150761
 )  
-[Virusscan at Virustotal, titlelinerA32.exe 32bit-exe ANSI, Check here]((https://www.virustotal.com/gui/url/4461b7965dcdd0b1f6f3d725270b941ba8a1a5edd12a462938585e7e184d9027/detection/u-4461b7965dcdd0b1f6f3d725270b941ba8a1a5edd12a462938585e7e184d9027-1623150762
+[Virusscan at Virustotal, titlelinerA32.exe 32bit-exe ANSI, Check here](https://www.virustotal.com/gui/url/4461b7965dcdd0b1f6f3d725270b941ba8a1a5edd12a462938585e7e184d9027/detection/u-4461b7965dcdd0b1f6f3d725270b941ba8a1a5edd12a462938585e7e184d9027-1623150762
 )  
 Use [CTRL] + Click to open in a new window! 
