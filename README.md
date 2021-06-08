@@ -1,6 +1,6 @@
 # Titleliner ![Icon](https://github.com/jvr-ks/titleliner/blob/master/titleliner.png?raw=true)
 
-Small tool making (64bit exe only) creating a divider like:  
+Small tool making creating a divider like:  
 ";------------- title -------------"  
 or  
 "/------------- title -------------"  
@@ -13,7 +13,7 @@ Select the text and then press the hotkey (Alt + l is default).
   
  
 #### Remarks
-* There are some false positiv virus detections(64-bit exe only)  
+* There are some false positiv virus detections (64-bit exe only)  
 [Virusscan](#virusscan) at Virustotal see below.  
   
 #### Latest changes  
@@ -29,7 +29,11 @@ Select the text and then press the hotkey (Alt + l is default).
 (Right-click ... save as ... to download)  
   
 from github, these files are essential:   
-[titleliner.exe](https://github.com/jvr-ks/titleliner/raw/master/titleliner.exe)  
+[titleliner.exe 64bit](https://github.com/jvr-ks/titleliner/raw/master/titleliner.exe)  
+or  
+[titleliner.exe 32bit](https://github.com/jvr-ks/titleliner/raw/master/titleliner32.exe)  
+or  
+[titleliner.exe 32bit ANSI](https://github.com/jvr-ks/titleliner/raw/master/titlelinerA32.exe)  
 and   
 [titleliner.ini](https://github.com/jvr-ks/titleliner/raw/master/titleliner.ini)   
 and  
@@ -80,7 +84,7 @@ Copyright (c) 2019/2020 J. v. Roos
 
 <a name="virusscan"></a>
 
-##### Viruscheck at Virustotal 
+##### Virusscan at Virustotal 
 [Virusscan at Virustotal, titleliner.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/feae6aae34b2054ddaf4369ae8c3830fc9a147ddcd3cbec0619d5079463c5c4a/detection/u-feae6aae34b2054ddaf4369ae8c3830fc9a147ddcd3cbec0619d5079463c5c4a-1623152967
 )  
 [Virusscan at Virustotal, titleliner32.exe 32bit-exe, Check here](https://www.virustotal.com/gui/url/4ab1c10fc7391755e32321c2a6b37f73cb66a0f1aebb696a6b3f10eca6110f39/detection/u-4ab1c10fc7391755e32321c2a6b37f73cb66a0f1aebb696a6b3f10eca6110f39-1623152967
