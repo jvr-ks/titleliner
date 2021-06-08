@@ -25,17 +25,18 @@ downLoadURL := "https://github.com/jvr-ks/titleliner/raw/master/titleliner.exe"
 exeFilename := "titleliner.exe"
 downLoadFilename := "titleliner.exe.tmp"
 downLoadURLrestart64 := "https://github.com/jvr-ks/titleliner/raw/master/restart64.bat"
-	
+
 FileEncoding, UTF-8-RAW
 
 OwnPID := DllCall("GetCurrentProcessId")
 
 appName := "Titleliner"
-appVersion := "0.031"
+appVersion := "0.032"
 app := appName . " " . appVersion
 
 titleLineLengthDefault := 77
 clipSave := ""
+autoinsert := false
 
 commentCharSelected := 1
 commentCharSelectedMax := 8
@@ -300,7 +301,6 @@ checkFocus(){
 	global activeWin
 	global iniFile
 
-
 	h := WinActive("A")
 	if (activeWin != h){
 		hideWindow()
@@ -368,20 +368,21 @@ lineTitleWithSave(){
 	global clipSave
 	global app
 	
-		if (WinActive(app))
-			return
+		if (WinActive(app)){
+			doAutoinsert()
+		} else {
+			;save only when called by hotkey
+			clipboard := ""
+			Send {Ctrl down}c{Ctrl up}
 			
-		;save only when called by hotkey
-		clipboard := ""
-		Send {Ctrl down}c{Ctrl up}
+			cl := clipboard
+			
+			if (StrLen(cl) > 0)
+				clipSave := clipboard
+			
+			lineTitle()
+		}
 		
-		cl := clipboard
-		
-		if (StrLen(cl) > 0)
-			clipSave := clipboard
-
-		lineTitle()
-
 	return
 }
 ;--------------------------------- lineTitle ---------------------------------
@@ -393,6 +394,7 @@ lineTitle(){
 	global clipSave
 	global menuhotkey
 	
+		StringReplace clipboard, clipboard, `r`n,, All
 		cl := clipboard
 		
 		theCommentChar := ""
@@ -429,14 +431,26 @@ lineTitleGenerate(theCommentChar){
 		r := theCommentChar . JEE_StrRept("-",dotlength)
 		r := r  . distanceChar . s . distanceChar
 
-		r := r . JEE_StrRept("-",dotlength) . "`n"
+		;r := r . JEE_StrRept("-",dotlength) . "`n" ; interferes with Autoinsert-feature
+		r := r . JEE_StrRept("-",dotlength)
 		clipboard := r
 
 		GuiControl,guiMain:,Text2,%r%
 		
 		showWindow()
-
+			
 		return
+}
+
+;------------------------------- doAutoinsert -------------------------------
+
+doAutoinsert(){
+	
+	hideWindow()
+	
+	Send,{Left}{Pos1}{Enter}{Up}{Ctrl down}v{Ctrl up}
+	
+	return
 }
 ;-------------------------------- JEE_StrRept --------------------------------
 JEE_StrRept(vText, vNum){

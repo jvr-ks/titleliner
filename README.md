@@ -20,9 +20,11 @@ I did not report the false-positives to Microsoft,
 because the development has not finished yet.  
   
 #### Latest changes  
-* Super simple app-update mechanism via "restart64.bat"
-* A newline is added to the generated divider!
-* Self remove from memory: titleliner.exe remove 
+* Autoinsert: Press hotkey again while Titleliner-window is open  
+* Newlines are always removed from title-input (to use triple-click in np++)  
+* Super simple app-update mechanism via "restart64.bat"  
+* ~~A newline is added to the generated divider!~~ removed because it interferes with new Autoinsert-feature  
+* Self remove from memory: titleliner.exe remove  
 * Comment characters 1 to 8 (defined in the Configuration-file: "titleliner.ini") are selectable via radio buttons.  
 * If nothing is selected, an "empty" divider is generated.  
   
@@ -80,6 +82,6 @@ Copyright (c) 2019/2020 J. v. Roos
 
 
 ##### Viruscheck at Virustotal 
-[Check here](https://www.virustotal.com/gui/url/feae6aae34b2054ddaf4369ae8c3830fc9a147ddcd3cbec0619d5079463c5c4a/detection/u-feae6aae34b2054ddaf4369ae8c3830fc9a147ddcd3cbec0619d5079463c5c4a-1622114869
+[Check here](https://www.virustotal.com/gui/url/feae6aae34b2054ddaf4369ae8c3830fc9a147ddcd3cbec0619d5079463c5c4a/detection/u-feae6aae34b2054ddaf4369ae8c3830fc9a147ddcd3cbec0619d5079463c5c4a-1623148735
 )  
 Use [CTRL] + Click to open in a new window! 

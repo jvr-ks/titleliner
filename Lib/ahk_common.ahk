@@ -48,9 +48,9 @@ checkVersionFromGithub(){
 	return
 }
 ;------------------------------- showMessage4 -------------------------------
-showMessage4(hk1, hk2, memory,reso){
+showMessage4(hk1, hk2,reso,memory){
 
-	SB_SetParts(700,500,170)
+	SB_SetParts(300,500,200)
 	SB_SetText(" " . hk1 , 1, 1)
 	SB_SetText(" " . hk2 , 2, 1)
 	SB_SetText("`t" . reso , 3, 2)
@@ -127,7 +127,7 @@ SetTextAndResize(controlHwnd, newText) {
 	DllCall("ReleaseDC", "Ptr", controlHwnd, "Ptr", dc)
 
 	GuiControl,, %controlHwnd%, %newText%
-	;GuiControl Move, %controlHwnd%, % "h" h " w" w
+
 	GuiControl Move, %controlHwnd%, % "w" w
 	
 	newtipWindowTextWidth := w
