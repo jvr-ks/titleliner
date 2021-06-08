@@ -441,9 +441,7 @@ lineTitleGenerate(theCommentChar){
 			
 		return
 }
-
 ;------------------------------- doAutoinsert -------------------------------
-
 doAutoinsert(){
 	
 	hideWindow()
