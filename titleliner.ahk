@@ -1,4 +1,4 @@
-﻿/*
+/*
  *********************************************************************************
  * 
  * titleliner.ahk
@@ -31,7 +31,7 @@ FileEncoding, UTF-8-RAW
 OwnPID := DllCall("GetCurrentProcessId")
 
 appName := "Titleliner"
-appVersion := "0.032"
+appVersion := "0.033"
 app := appName . " " . appVersion
 
 titleLineLengthDefault := 77
