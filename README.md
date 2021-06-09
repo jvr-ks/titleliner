@@ -45,7 +45,7 @@ or clone the [titleliner repository](https://github.com/jvr-ks/titleliner.git) .
   
 **Directory must be writable by the app!**  
   
-**Be shure to use only one of the *.exe at a time!**  
+**Be shure to use only one of the \*.exe at a time!**  
 
 #### Configuration-file "titleliner.ini"  
  
