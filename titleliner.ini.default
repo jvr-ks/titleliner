@@ -15,7 +15,7 @@ commentChar2="//"
 commentChar3="#"
 commentChar4="rem "
 commentChar5="@rem "
-commentChar6="-"
+commentChar6="--"
 commentChar7="-"
 commentChar8="-"
 
