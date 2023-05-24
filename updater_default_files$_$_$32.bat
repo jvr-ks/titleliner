@@ -4,5 +4,7 @@ copy /Y "titleliner32.exe" "titleliner32.exe.default"
 
 copy /Y "titleliner.ini" "titleliner.ini.default"
 
+copy /Y "restart.bat" "restart.bat.default"
+
 copy /Y "Licenses.txt" "Licenses.txt.default"
 

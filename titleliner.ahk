@@ -210,7 +210,7 @@ mainWindow(hide := false){
   global commentCharSelectedMax
   global msgDefault
   global bit
-  global hMain
+  global hMain, guiMain
 
   Gui, guiMain:Destroy
   Gui, guiMain:New, +LastFound hwndhMain, %app%
@@ -533,7 +533,7 @@ JEE_StrRept(vText, vNum){
 }
 ;-------------------------------- editIniFile --------------------------------
 editIniFile() {
-  global hWnd
+  global hMain
   global iniFile
   global notepadpath
   global bitName
@@ -545,7 +545,7 @@ editIniFile() {
   showMessage("", "")
   showWindow()
   
-  showHintColored(hWnd, appName . bitName . " restarts now!", 3000, "c00FF00", "c000000")
+  showHintColored(hMain, appName . bitName . " restarts now!")
   restartAppNoupdate()
 
   return
@@ -674,11 +674,18 @@ removeMessage(){
   return
 }
 ;------------------------------ showHintColored ------------------------------
-showHintColored(handle, s := "", n := 3000, fg := "c00FF00", bg := "c000000", font := "Segoe UI", fontsize := 9){
+showHintColored(handle, s := "", n := 3000, fg := "cffffff", bg := "a900ff", newfont := "", newfontsize := ""){
   global hMain
+  global font, fontsize
   
-  Gui, hintColored:new, hwndhHintColored +parentGuiMain +ownerGuiMain
-  Gui, hintColored:Font, s%fontsize%, %font%
+  if (newfont == "")
+    newfont := font
+    
+  if (newfontsize == "")
+    newfontsize := fontsize
+  
+  Gui, hintColored:new, hwndhHintColored +parentguiMain +ownerguiMain +0x80000000
+  Gui, hintColored:Font, s%newfontsize%, %newfont%
   Gui, hintColored:Font, c%fg%
   Gui, hintColored:Color, %bg%
   Gui, hintColored:Add, Text,, %s%
@@ -707,9 +714,9 @@ WinCenter(hMain, hChild, Visible := 1) {
     WinShow, ahk_ID %hChild%
 }
 ;-------------------------------- WinMonitor --------------------------------
-WinMonitor(hwnd, Center := 1) {
+WinMonitor(hMain, Center := 1) {
     SysGet, MonitorCount, 80
-    WinGetPos, X, Y, W, H, ahk_ID %hwnd%
+    WinGetPos, X, Y, W, H, ahk_ID %hMain%
     Center ? (X := X+(W//2), Y := Y+(H//2))
     loop %MonitorCount% {
       SysGet, Mon, Monitor, %A_Index%
