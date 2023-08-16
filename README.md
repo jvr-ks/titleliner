@@ -61,7 +61,7 @@ or
 Start with Windows:  
 * To create a shortcut of "titleliner.exe" in the windows-autostart folder ("shell:startup"),  
 run the simple Powershell script:  
-[create_titleliner_exe_link_with_showwindow_in_autostartfolder.bat](https://github.com/jvr-ks/titleliner/raw/master/create_titleliner_exe_link_with_showwindow_in_autostartfolder.bat), or  
+[create_titleliner_exe_link_with_showwindow_in_autostartfolder.bat](https://github.com/jvr-ks/titleliner/raw/main/create_titleliner_exe_link_with_showwindow_in_autostartfolder.bat), or  
 take a look at the project [startdelayed](https://github.com/jvr-ks/startdelayed). 
   
 or clone the [titleliner repository](https://github.com/jvr-ks/titleliner.git) .  
@@ -113,9 +113,9 @@ Copyright (c) 2019/2020 J. v. Roos
 <a name="virusscan"></a>
 
 ##### Virusscan at Virustotal 
-[Virusscan at Virustotal, titleliner.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/fb73a10e9896bee9f1460f35f93ac42868449e8cd71fad3e2a6bd539361bc134/detection/u-fb73a10e9896bee9f1460f35f93ac42868449e8cd71fad3e2a6bd539361bc134-1687800527
+[Virusscan at Virustotal, titleliner.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/fb73a10e9896bee9f1460f35f93ac42868449e8cd71fad3e2a6bd539361bc134/detection/u-fb73a10e9896bee9f1460f35f93ac42868449e8cd71fad3e2a6bd539361bc134-1692197672
 )  
-[Virusscan at Virustotal, titleliner32.exe 32bit-exe, Check here](https://www.virustotal.com/gui/url/1791d824edc3f0babd5d0a45502339ad9eecc0b704dfc5e30b0b557e83b44790/detection/u-1791d824edc3f0babd5d0a45502339ad9eecc0b704dfc5e30b0b557e83b44790-1687800528
+[Virusscan at Virustotal, titleliner32.exe 32bit-exe, Check here](https://www.virustotal.com/gui/url/1791d824edc3f0babd5d0a45502339ad9eecc0b704dfc5e30b0b557e83b44790/detection/u-1791d824edc3f0babd5d0a45502339ad9eecc0b704dfc5e30b0b557e83b44790-1692197673
 )  
 )  
 Use [CTRL] + Click to open in a new window! 

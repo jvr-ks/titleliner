@@ -32,7 +32,7 @@ wrkDir := A_ScriptDir . "\"
 appName := "Titleliner"
 appnameLower := "titleliner"
 appExtension := ".exe"
-appVersion := "0.063"
+appVersion := "0.064"
 
 bit := (A_PtrSize=8 ? "64" : "32")
 
@@ -63,7 +63,7 @@ overwriteHotkey := overwriteHotkeyDefault
 exithotkeyDefault := "^!l" ; Ctrl + Alt + l
 exitHotkey := exithotkeyDefault
 
-server := "https://github.com/jvr-ks/" . appnameLower . "/raw/master/"
+server := "https://github.com/jvr-ks/" . appnameLower . "/raw/main/"
 downLoadURL := server . appnameLower . bitName . appExtension
 downLoadFilename := appnameLower . ".exe.tmp"
 restartFilename := "restart.bat"
