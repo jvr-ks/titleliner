@@ -113,9 +113,9 @@ Copyright (c) 2019/2020 J. v. Roos
 <a name="virusscan"></a>
 
 ##### Virusscan at Virustotal 
-[Virusscan at Virustotal, titleliner.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/fb73a10e9896bee9f1460f35f93ac42868449e8cd71fad3e2a6bd539361bc134/detection/u-fb73a10e9896bee9f1460f35f93ac42868449e8cd71fad3e2a6bd539361bc134-1697180902
+[Virusscan at Virustotal, titleliner.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/fb73a10e9896bee9f1460f35f93ac42868449e8cd71fad3e2a6bd539361bc134/detection/u-fb73a10e9896bee9f1460f35f93ac42868449e8cd71fad3e2a6bd539361bc134-1697182789
 )  
-[Virusscan at Virustotal, titleliner32.exe 32bit-exe, Check here](https://www.virustotal.com/gui/url/1791d824edc3f0babd5d0a45502339ad9eecc0b704dfc5e30b0b557e83b44790/detection/u-1791d824edc3f0babd5d0a45502339ad9eecc0b704dfc5e30b0b557e83b44790-1697180903
+[Virusscan at Virustotal, titleliner32.exe 32bit-exe, Check here](https://www.virustotal.com/gui/url/1791d824edc3f0babd5d0a45502339ad9eecc0b704dfc5e30b0b557e83b44790/detection/u-1791d824edc3f0babd5d0a45502339ad9eecc0b704dfc5e30b0b557e83b44790-1697182790
 )  
 )  
 Use [CTRL] + Click to open in a new window! 
