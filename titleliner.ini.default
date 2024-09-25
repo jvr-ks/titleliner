@@ -1,0 +1,25 @@
+[setup]
+titleLineLength=77
+notepadPath="C:\Windows\notepad.exe"
+notepadPathNppp="C:\Program Files\Notepad++\notepad++.exe"
+
+
+[hotkeys]
+menuHotkey="!l"
+autoInsDelHotkey="+!l"
+exitHotkey="^!l"
+
+[commentChar]
+commentChar1=";"
+commentChar2="//"
+commentChar3="#"
+commentChar4="rem "
+commentChar5="@rem "
+commentChar6="-- "
+commentChar7="-"
+commentChar8="-"
+
+
+commentCharSelected=1
+
+
