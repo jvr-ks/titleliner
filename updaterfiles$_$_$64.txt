@@ -1,0 +1,5 @@
+titleliner.exe,yes,forced
+titleliner.ini,no
+restart.bat,yes,forced
+Licenses.txt,yes,forced
+
