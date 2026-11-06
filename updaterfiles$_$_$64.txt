@@ -1,5 +1,5 @@
-titleliner.exe,yes
+titleliner.exe,yes,overwrite
 titleliner.ini,no
-restart.bat,yes
-Licenses.txt,yes
+restart.bat,yes,overwrite
+Licenses.txt,yes,overwrite
 
